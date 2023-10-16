@@ -9,7 +9,7 @@ trigger:
 pool:
   name: self hosted with azure vm
   demands:
-   - agent.name -equals self hosted azure vm
+   - agent.name -equals self hosted ubuntu vm
 
 steps:
 - task: Maven@3
