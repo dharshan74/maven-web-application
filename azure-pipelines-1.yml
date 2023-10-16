@@ -9,7 +9,7 @@ trigger:
 pool:
   name: Default
   demands:
-    -agent.name -equals  my `new self hosted agent
+    -agent.name -equals  self hosted ubuntu vm
 
 steps:
 - task: Maven@3
