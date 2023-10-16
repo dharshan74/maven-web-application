@@ -7,7 +7,9 @@ trigger:
 - master
 
 pool:
-  vmImage: my `new self hosted agent
+  name: Default
+  demands:
+    -agent.name -equals  my `new self hosted agent
 
 steps:
 - task: Maven@3
