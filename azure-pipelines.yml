@@ -18,6 +18,7 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
+    options: '-s settings.xml -DnexusUsername=admin -DnexusPassword=@DHArshan987'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
