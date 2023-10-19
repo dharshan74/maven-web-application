@@ -14,6 +14,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+- task: MavenAuthenticate@0
+  inputs:
+    mavenServiceConnections: 'NexusCredentials'
+
 steps:
 - task: Maven@3
   inputs:
