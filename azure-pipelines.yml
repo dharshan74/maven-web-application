@@ -12,7 +12,7 @@ trigger:
 #   - agent.name -equals self hosted ubuntu vm
 
 pool:
-  name: 
+  name
   vmImage: 'ubuntu-latest'
 steps:
 - task: Maven@3
